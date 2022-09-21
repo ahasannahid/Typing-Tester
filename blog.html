@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog</title>
+</head>
+
+<br>
+<div class="card-container">
+
+    <div class="card-title">Answer These Questions</div>
+    <div class="card">
+        <h3>Write down the difference between local storage an session stroge</h3>
+        <p>
+            <small>Local Storage:</small>
+        <ul>
+            <li>The storage capacity of local storage is 5MB/10MB</li>
+            <li>As it is not session-based, it must be deleted via javascript or manually</li>
+            <li>The client can only read local storage</li>
+            <li>There is no transfer of data to the server</li>
+            <li>There are fewer old browsers that support it</li>
+        </ul>
+        </p>
+        <br>
+        <p>
+            <small>Session Storage:</small>
+        <ul>
+            <li>The storage capacity of session storage is 5MB</li>
+            <li>It’s session-based and works per window or tab. This means that data is stored only for the duration of
+                a session, i.e., until the browser (or tab) is closed</li>
+            <li>The client can only read local storage</li>
+            <li>There is no transfer of data to the server</li>
+            <li>There are fewer old browsers that support it</li>
+        </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h3>Describe Event Loop?</h3>
+        <p>
+            <small>Event Loop:</small>
+            Javascript is a single threaded language. It is interpreted by various engines, the most famous of which is
+            V8 used in Chrome and Node.
+            However, the engine is really only doing a couple of things. It runs the code line by line and adds
+            functions to the call stack.
+            The event loop is the term given to the process of the waiting for the queue to receive a message
+            synchronously. The increment that the event loop moves in is called a tick, and every time it ticks it
+            checks if the call stack is empty, if so , it adds the top function in the event queue to the call stack and
+            executes it. Once it is finished processing this function it starts ticking again. This diagram is simple
+            and great.
+        </p>
+    </div>
+    <div class="card">
+        <h3>Difference Between Global Scope and Block Scope</h3>
+        <p>
+            <small>Global Scope:</small>
+            The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.
+        </p>
+        <br>
+        <p>
+            <small>Block Scope:</small>
+            This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it.
+
+        </p>
+    </div>
+    <div class="card">
+        <h3>When do we get undefined in JavaScript?</h3>
+        <p>
+            <small>Undefined:</small>
+        </p>
+        <br>
+        <ul>
+            <li>A variable that has not been initialized.</li>
+            <li>When try to accessing an array element which is not exist</li>
+            <li>When we try to access a property of an object that does not exist.</li>
+            <li>A function returns undefined when this function do not return a value </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>
